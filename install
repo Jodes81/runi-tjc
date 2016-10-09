@@ -1,4 +1,11 @@
 #!/bin/bash
+
+#----------------------------------------------------------
+# REMEMBER: Whatever goes in here needs to be undone in 
+# reverse in tjc-uninstall!!
+#----------------------------------------------------------
+
+
 echo .
 echo "======================================================="
 echo "============ Installing RUNI-TJC ======================"
@@ -15,7 +22,6 @@ ln -s /var/log/raspberrypi-ua-netinst.log ~/.raspberrypi-ua-netinst.log
 
 echo .
 echo "=============== Make dir structure ==============="
-mkdir -p ~/bin
 mkdir -p ~/lib
 mkdir -p ~/utils
 
@@ -40,19 +46,11 @@ add-repo ~/utils/installer
 
 
 
-# looooooooaaaaaaads of stuff to go in here. This is the BIG one!
-
-
-
-
-
-
-
 
 
 
 echo .
-echo =======================================================
-echo ======== Finished Installing RUNI-TJC =================
-echo =======================================================
+echo "======================================================="
+echo "======== Finished Installing RUNI-TJC ================="
+echo "======================================================="
 

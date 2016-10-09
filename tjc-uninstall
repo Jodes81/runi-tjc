@@ -1,0 +1,40 @@
+#!/bin/bash
+
+#----------------------------------------------------------------
+# ----- NOTE: ------
+# Just as `install` doesn't install this repo, this (`tjc-uninstall`) does
+# not uninstall itself; it only undoes what `install` did. This whole repository
+# is actually itself installed by the files created by patcher within the installation
+# it creates.
+# see ~/installer/on-first-login.sh 
+# or  ~/installer/patcher/patches/config/files/root/installer/on-first-login.sh
+#----------------------------------------------------------------
+
+#----------------------------------------------------------------
+# ACTIONS of on-first-login that **should** be undone. (Only one!!)
+# ~/installer/tjc/install
+#----------------------------------------------------------------
+
+#----------------------------------------------------------------
+#    ---- ACTIONS DONE BY `install` (TO UNDO)  ----
+# Basically whatever `install` does, but in reverse.
+#----------------------------------------------------------------
+
+remove-repo ~/utils/installer
+~/utils/installer/setdown
+rm -rf ~/utils/installer
+
+remove-repo ~/installer/patcher
+~/installer/patcher/bin/setdown
+rm -rf ~/installer/patcher
+
+rm -rf ~/utils
+rm -rf ~/lib
+
+rm ~/.raspberrypi-ua-netinst.log
+
+echo .
+echo "======================================================="
+echo "======= Finished Uninstalling RUNI-TJC ================"
+echo "======================================================="
+
