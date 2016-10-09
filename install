@@ -22,16 +22,16 @@ mkdir ~/utils
 echo .
 echo "===== Getting Patcher from GitHub ====="
 git clone git@bitbucket.org:Jody/rpi-ua-netinst-patcher-tjc.git ~/installer/patcher
-chmod 0755 ~/installer/patcher/setup
-~/installer/patcher/setup
+chmod 0755 ~/installer/patcher/bin/setup
+~/installer/patcher/bin/setup
 add-repo ~/installer/patcher
 
 
 #echo .
 #echo "=============== Install installer utilities ==============="
 git clone git@github.com:Jodes81/runi-utils-tjc.git ~/utils/installer
-chmod 0755 ~/utils/installer/bin/setup
-~/utils/installer/bin/setup
+chmod 0755 ~/utils/installer/setup
+~/utils/installer/setup
 add-repo ~/utils/installer
 
 
