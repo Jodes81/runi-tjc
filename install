@@ -1,8 +1,8 @@
 #!/bin/bash
 echo .
-echo =======================================================
-echo ============ Installing RUNI-TJC ======================
-echo =======================================================
+echo "======================================================="
+echo "============ Installing RUNI-TJC ======================"
+echo "======================================================="
 
 echo .
 echo "------------------------------------------------------------------"
@@ -10,11 +10,11 @@ echo "=============== Install dirs, files, utils & progs ==============="
 echo "------------------------------------------------------------------"
 
 echo .
-echo =============== Make link to install log ===============
+echo "=============== Make link to install log ==============="
 ln -s /var/log/raspberrypi-ua-netinst.log ~/.raspberrypi-ua-netinst.log
 
 echo .
-echo =============== Make dir structure ===============
+echo "=============== Make dir structure ==============="
 mkdir ~/bin
 mkdir ~/lib
 mkdir ~/utils
