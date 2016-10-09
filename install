@@ -30,8 +30,8 @@ add-repo ~/installer/patcher
 #echo .
 #echo "=============== Install installer utilities ==============="
 git clone git@github.com:Jodes81/runi-utils-tjc.git ~/utils/installer
-chmod 0755 ~/utils/installer/setup
-~/utils/installer/setup
+chmod 0755 ~/utils/installer/bin/setup
+~/utils/installer/bin/setup
 add-repo ~/utils/installer
 
 
