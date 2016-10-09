@@ -17,7 +17,9 @@ mkdir ~/utils
 
 echo .
 echo "===== Getting Patcher from GitHub ====="
-git clone git@bitbucket.org:Jody/rpi-ua-netinst-patcher-tjc.git ~/installer/pat$
+git clone git@bitbucket.org:Jody/rpi-ua-netinst-patcher-tjc.git ~/installer/patcher
+chmod 0755 ~/installer/patcher/setup
+~/installer/patcher/setup
 add-repo ~/installer/patcher
 
 
