@@ -18,6 +18,24 @@ mkdir ~/utils
 #echo .
 #echo =============== Install installer utilities ===============
 git clone git@github.com:Jodes81/runi-utils-tjc.git ~/utils/installer
+add-repo ~/utils/installer
+
+
+
+
+
+
+
+# looooooooaaaaaaads of stuff to go in here. This is the BIG one!
+
+
+
+
+
+
+
+
+
 
 echo .
 echo =======================================================
