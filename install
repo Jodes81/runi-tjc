@@ -15,8 +15,14 @@ mkdir ~/bin
 mkdir ~/lib
 mkdir ~/utils
 
+echo .
+echo "===== Getting Patcher from GitHub ====="
+git clone git@bitbucket.org:Jody/rpi-ua-netinst-patcher-tjc.git ~/installer/pat$
+add-repo ~/installer/patcher
+
+
 #echo .
-#echo =============== Install installer utilities ===============
+#echo "=============== Install installer utilities ==============="
 git clone git@github.com:Jodes81/runi-utils-tjc.git ~/utils/installer
 add-repo ~/utils/installer
 
