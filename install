@@ -15,9 +15,9 @@ ln -s /var/log/raspberrypi-ua-netinst.log ~/.raspberrypi-ua-netinst.log
 
 echo .
 echo "=============== Make dir structure ==============="
-mkdir ~/bin
-mkdir ~/lib
-mkdir ~/utils
+mkdir -p ~/bin
+mkdir -p ~/lib
+mkdir -p ~/utils
 
 echo .
 echo "===== Getting Patcher from GitHub ====="
