@@ -20,6 +20,10 @@
 # Basically whatever `install` does, but in reverse.
 #----------------------------------------------------------------
 
+remove-repo ~/utils/misc
+~/utils/misc/setdown
+rm -rf ~/utils/misc
+
 remove-repo ~/utils/installer
 ~/utils/installer/setdown
 rm -rf ~/utils/installer

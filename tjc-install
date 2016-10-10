@@ -40,6 +40,13 @@ chmod 0755 ~/utils/installer/setup
 ~/utils/installer/setup
 add-repo ~/utils/installer
 
+#echo .
+#echo "=============== Misc Utilities ==============="
+git clone git@github.com:Jodes81/runi-tjc-utils-misc.git ~/utils/misc
+chmod 0755 ~/utils/misc/setup
+~/utils/misc/setup
+add-repo ~/utils/misc
+
 
 
 
