@@ -20,6 +20,10 @@
 # Basically whatever `install` does, but in reverse.
 #----------------------------------------------------------------
 
+remove-repo ~/utils/metrics
+~/utils/metrics/setdown
+rm -rf ~/utils/metrics
+
 remove-repo ~/tjc/autoshutdown
 ~/tjc/autoshutdown/setdown
 rm -rf ~/tjc/autoshutdown
