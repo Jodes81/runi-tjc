@@ -84,6 +84,13 @@ if [ $(command -v node) ]; then
   popd
 fi
 
+#echo .
+#echo "=============== TJC Core ==============="
+git clone git@github.com:Jodes81/tjc-core.git ~/tjc/core
+chmod 0755 ~/tjc/core/setup
+~/tjc/core/setup
+add-repo ~/tjc/core
+
 
 
 

@@ -20,6 +20,10 @@
 # Basically whatever `install` does, but in reverse.
 #----------------------------------------------------------------
 
+remove-repo ~/tjc/core
+~/tjc/core/setdown
+rm -rf ~/tjc/core
+
 remove-repo ~/play
 ~/play/setdown
 rm -rf ~/play
