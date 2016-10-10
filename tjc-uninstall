@@ -20,6 +20,12 @@
 # Basically whatever `install` does, but in reverse.
 #----------------------------------------------------------------
 
+remove-repo ~/tjc/autoshutdown
+~/tjc/autoshutdown/setdown
+rm -rf ~/tjc/autoshutdown
+
+rm -rf ~/lib/WiringPi
+
 remove-repo ~/utils/misc
 ~/utils/misc/setdown
 rm -rf ~/utils/misc
@@ -34,6 +40,7 @@ rm -rf ~/installer/patcher
 
 rm -rf ~/utils
 rm -rf ~/lib
+rm -rf ~/tjc
 
 rm ~/.raspberrypi-ua-netinst.log
 
