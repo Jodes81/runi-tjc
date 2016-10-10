@@ -1,20 +1,12 @@
 #!/bin/bash
-
 #----------------------------------------------------------
 # REMEMBER: Whatever goes in here needs to be undone in 
 # reverse in tjc-uninstall!!
 #----------------------------------------------------------
-
-
 echo .
 echo "======================================================="
 echo "============ Installing RUNI-TJC ======================"
 echo "======================================================="
-
-echo .
-echo "------------------------------------------------------------------"
-echo "=============== Install dirs, files, utils & progs ==============="
-echo "------------------------------------------------------------------"
 
 echo .
 echo "=============== Make link to install log ==============="
@@ -32,7 +24,6 @@ git clone git@bitbucket.org:Jody/rpi-ua-netinst-patcher-tjc.git ~/installer/patc
 chmod 0755 ~/installer/patcher/bin/setup
 ~/installer/patcher/bin/setup
 add-repo ~/installer/patcher
-
 
 #echo .
 #echo "=============== Install installer utilities ==============="
@@ -56,13 +47,19 @@ pushd ~/lib/WiringPi
 ./build
 popd
 
-
 #echo .
 #echo "=============== Auto shutdown ==============="
 git clone git@github.com:Jodes81/rpi-autoshutdown.git ~/tjc/autoshutdown
 chmod 0755 ~/tjc/autoshutdown/setup
 ~/tjc/autoshutdown/setup
 add-repo ~/tjc/autoshutdown
+
+#echo .
+#echo "=============== RPi Metrics ==============="
+git clone git@github.com:Jodes81/rpi-metrics.git ~/utils/metrics
+chmod 0755 ~/utils/metrics/setup
+~/utils/metrics/setup
+add-repo ~/utils/metrics
 
 
 
