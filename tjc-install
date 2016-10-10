@@ -61,6 +61,13 @@ chmod 0755 ~/utils/metrics/setup
 ~/utils/metrics/setup
 add-repo ~/utils/metrics
 
+#echo .
+#echo "=============== Play ==============="
+git clone git@github.com:Jodes81/tjc-play.git ~/play
+chmod 0755 ~/play/setup
+~/play/setup
+add-repo ~/play
+
 
 
 

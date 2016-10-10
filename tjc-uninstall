@@ -20,6 +20,10 @@
 # Basically whatever `install` does, but in reverse.
 #----------------------------------------------------------------
 
+remove-repo ~/play
+~/play/setdown
+rm -rf ~/play
+
 remove-repo ~/utils/metrics
 ~/utils/metrics/setdown
 rm -rf ~/utils/metrics
