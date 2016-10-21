@@ -91,6 +91,10 @@ chmod 0755 ~/tjc/core/setup
 ~/tjc/core/setup
 add-repo ~/tjc/core
 
+#echo .
+#echo "=============== Blockly ==============="
+git clone git@github.com:google/blockly.git ~/libs/blockly
+
 
 
 
